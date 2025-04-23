@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv7nxl7x355rq"]
+
+[ext_resource type="PackedScene" uid="uid://d1w75d8mvjnv3" path="res://models/building_B_withoutBase.gltf" id="1_pxm4f"]
+[ext_resource type="PackedScene" uid="uid://xrt4hsa2mfyg" path="res://models/base.gltf" id="2_qyse0"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e34rl"]
+points = PackedVector3Array(0.79991, 1.65, 0.65, 0.79991, 0.84993, 0.65, 0.80337, 0.413252, -0.184514, 0.79991, 1.65, -0.65, -0.800067, 1.65, 0.65, 0.726776, 0.280185, 0.642492, 0.79991, 0.0999304, 0.59999, 0.80337, 0.369706, -0.184514, -0.800067, 0.84993, 0.65, -0.473089, 0.0999304, 0.642492, 0.80337, 0.413252, -0.271809, 0.80337, 0.342091, -0.337089, 0.79991, 0.84993, -0.65, -0.800067, 1.65, -0.65, -0.80337, 1.31316, 0.0502642, -0.80337, 1.242, 0.115417, 0.79991, 0.0999304, -0.600117, 0.80337, 0.298544, -0.249794, -0.80337, 1.19845, 0.115417, -0.800067, 0.0999304, 0.59999, -0.726933, 0.0999304, 0.642492, 0.80337, 0.298544, -0.337089, -0.800067, 0.84993, -0.65, -0.80337, 1.31316, -0.0370302, -0.800067, 0.0999304, -0.600117, -0.80337, 1.19845, 0.0282498, -0.80337, 1.26961, -0.0370302)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fdteb"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 1, 1, 0, 1, 1, 0.0999902, -1, 1, 0.0999902, 1)
+
+[node name="BuildingB" type="RigidBody3D"]
+mass = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_e34rl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 0.6, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_fdteb")
+
+[node name="building_B_withoutBase2" parent="." instance=ExtResource("1_pxm4f")]
+
+[node name="base2" parent="." instance=ExtResource("2_qyse0")]
+
+[node name="base" parent="base2" index="0"]
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 0.6, 0, 0, 0)
+
+[editable path="building_B_withoutBase2"]
+[editable path="base2"]

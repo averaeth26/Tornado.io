@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2w0n1j7m0w4k"]
+
+[ext_resource type="Script" uid="uid://0fp1u8bovef" path="res://character_body_3d.gd" id="1_uk4t0"]
+[ext_resource type="Script" uid="uid://bshbhp7p3u8wo" path="res://camera_3d.gd" id="2_cdff1"]
+[ext_resource type="PackedScene" uid="uid://uqptct7utq2i" path="res://models/TornadoCharacter.glb" id="3_5e1sc"]
+[ext_resource type="Script" uid="uid://dv26fdwy8hwd2" path="res://models/tornado_character.gd" id="4_vd1dw"]
+[ext_resource type="Script" uid="uid://cj2ayp7vlb7xv" path="res://area_3d.gd" id="5_6rkpn"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_e3m3f"]
+height = 1.84326
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_28psf"]
+radius = 0.853027
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_uk4t0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.645738, 0.763559, 0, -0.763559, 0.645738, 0, 2.987, 1.15278)
+script = ExtResource("2_cdff1")
+
+[node name="TornadoCharacter" parent="." instance=ExtResource("3_5e1sc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.147224)
+script = ExtResource("4_vd1dw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00741, -0.144752)
+shape = SubResource("CylinderShape3D_e3m3f")
+disabled = true
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 0)
+script = ExtResource("5_6rkpn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0213614, 0.858171, -0.13079)
+shape = SubResource("CylinderShape3D_28psf")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dclrg54l085gq"]
+
+[ext_resource type="PackedScene" uid="uid://xrt4hsa2mfyg" path="res://models/base.gltf" id="1_0gk0o"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j0ln1"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 1, 1, 0, 1, 1, 0.0999902, -1, 1, 0.0999902, 1)
+
+[node name="Base" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_j0ln1")
+
+[node name="base2" parent="." instance=ExtResource("1_0gk0o")]
+
+[editable path="base2"]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0g5eb3mxukhp"]
+
+[ext_resource type="PackedScene" uid="uid://raqwh38lokoo" path="res://models/building_F_withoutBase.gltf" id="1_tm5xj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tm5xj"]
+points = PackedVector3Array(-1.00337, 1.19854, 0.0282498, -1.00337, 1.19854, 0.115417, -1.00337, 1.26968, -0.0370302, -1.00003, 0.0999304, -0.600117, -1.00337, 1.24192, 0.115417, -1.00003, 0.0999304, 0.59999, -1.00003, 0.84988, 0.65, -1.00337, 1.31329, -0.0370302, -1.00003, 0.84988, -0.65, 0.999834, 0.0999304, -0.600117, -1.00337, 1.31329, 0.0502642, -1.00003, 2.35, 0.65, 0.999834, 0.0999304, 0.59999, -0.926958, 0.280095, 0.642492, 0.999834, 0.84988, 0.65, -1.00003, 2.35, -0.65, 0.999834, 0.84988, -0.65, 1.00337, 0.298375, -0.337089, 0.999834, 2.35, 0.65, 0.926762, 0.280095, 0.642492, 1.00337, 0.298375, -0.249794, 1.00337, 0.369736, -0.184514, 1.00337, 1.6985, 0.115417, 0.999834, 2.35, -0.65, 1.00337, 0.341985, -0.337089, 1.00337, 1.74211, 0.115417, 1.00337, 1.81325, 0.0502642, 1.00337, 1.81325, -0.0370302)
+
+[node name="BuildingF" type="RigidBody3D"]
+mass = 18.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_tm5xj")
+
+[node name="building_F_withoutBase2" parent="." instance=ExtResource("1_tm5xj")]
+
+[editable path="building_F_withoutBase2"]

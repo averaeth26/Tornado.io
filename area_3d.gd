@@ -1,21 +1,17 @@
 extends Area3D
 
-@export var inward_force:    float = 50.0   # how hard it pulls inward
+@export var inward_force:    float = 200.0   # how hard it pulls inward
 @export var spin_force:      float = 2.0   # how hard it spins around
 @export var lift_force:      float = 10.0  # how hard it lifts upward
 
 var bodies: Array[RigidBody3D] = []
 var joints := {}
-var anchor = StaticBody3D.new()
 
 
 func _ready() -> void:
 	monitoring = true
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
-	add_child(anchor)
-	anchor.name = "TornadoAnchor"
-	anchor.global_transform.origin = global_transform.origin
 
 
 func _on_body_entered(body):
@@ -33,10 +29,11 @@ func _physics_process(delta: float) -> void:
 			bodies.erase(body)
 			continue
 			
-		print(body)
+		#print(body)
 
 		# vector from tornado center to object
 		var offset: Vector3 = body.global_transform.origin - global_transform.origin
+		var distFromCenter := offset.length()
 		# horizontal component only (ignore y for spin/pull)
 		var horiz: Vector3  = Vector3(offset.x, 0, offset.z)
 		if horiz.length() > 0.1:
@@ -45,9 +42,9 @@ func _physics_process(delta: float) -> void:
 
 			# pull inward (centripetal)
 			body.apply_central_force(radial_dir * inward_force)
-			print(radial_dir * inward_force)
+			# print(radial_dir * inward_force)
 			# spin around
-			body.apply_central_force(tangential_dir * spin_force)
+			body.apply_central_force(tangential_dir * spin_force * distFromCenter)
 
 		# lift up
 		body.apply_central_force(Vector3.UP * lift_force)
