@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5l51ihigrkno"]
+
+[ext_resource type="PackedScene" uid="uid://c2505oapv8glq" path="res://models/road_junction.gltf" id="1_gcyna"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a6qy2"]
+points = PackedVector3Array(1, 0.1, 0.999804, -1, 0.1, 0.999804, 1, 0, 0.999804, 1, 0.1, -1, -1, 0, 0.999804, -1, 0.1, -1, 1, 0, -1, -1, 0, -1)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00407, 0, 0, 0, 1.00407, 0, 0, 0, 1.00407, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_a6qy2")
+
+[node name="road_junction2" parent="." instance=ExtResource("1_gcyna")]

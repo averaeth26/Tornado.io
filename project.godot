@@ -15,6 +15,10 @@ run/main_scene="uid://djouu2ebofqfp"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[global_group]
+
+Scenery="Stuff that the tornado can pick up/destroy"
+
 [input]
 
 move_left={

@@ -1,9 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://djouu2ebofqfp"]
+[gd_scene load_steps=27 format=3 uid="uid://djouu2ebofqfp"]
 
 [ext_resource type="PackedScene" uid="uid://dvcgixxlhsiqf" path="res://models/road_straight.gltf" id="1_e3m3f"]
 [ext_resource type="Script" uid="uid://0fp1u8bovef" path="res://character_body_3d.gd" id="2_bqqt8"]
 [ext_resource type="PackedScene" uid="uid://uqptct7utq2i" path="res://models/TornadoCharacter.glb" id="2_ws5ob"]
-[ext_resource type="PackedScene" uid="uid://c2505oapv8glq" path="res://models/road_junction.gltf" id="4_8dnxm"]
+[ext_resource type="Script" uid="uid://cj2ayp7vlb7xv" path="res://area_3d.gd" id="4_va67g"]
 [ext_resource type="PackedScene" uid="uid://bdhmdlfml8en4" path="res://models/road_corner_curved.gltf" id="5_v3hs3"]
 [ext_resource type="PackedScene" uid="uid://t83icm1avxtx" path="res://models/road_tsplit.gltf" id="6_x5ji8"]
 [ext_resource type="PackedScene" uid="uid://b2ppc5p2xulw" path="res://models/streetlight.gltf" id="7_o8l48"]
@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://c88vpeqrovr12" path="res://models/car_stationwagon.gltf" id="17_va67g"]
 [ext_resource type="PackedScene" uid="uid://brhfkyue6fgsa" path="res://models/car_taxi.gltf" id="18_t0yo1"]
 [ext_resource type="PackedScene" uid="uid://cxptxkii8k7yx" path="res://models/car_police.gltf" id="19_6brkw"]
+[ext_resource type="PackedScene" uid="uid://c5l51ihigrkno" path="res://RoadJunction.tscn" id="19_a6adi"]
+[ext_resource type="PackedScene" uid="uid://dppqg10hm3rcr" path="res://PoliceCar.tscn" id="20_va67g"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e3m3f"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -36,6 +38,9 @@ glow_enabled = true
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_e3m3f"]
 height = 1.84326
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_28psf"]
+radius = 0.853027
+
 [node name="MainGame" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -49,6 +54,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 script = ExtResource("2_bqqt8")
 
 [node name="TornadoCharacter" parent="CharacterBody3D" instance=ExtResource("2_ws5ob")]
@@ -60,17 +66,30 @@ transform = Transform3D(1, 0, 0, 0, 0.645738, 0.763559, 0, -0.763559, 0.645738, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00741, -0.144752)
 shape = SubResource("CylinderShape3D_e3m3f")
+disabled = true
 
-[node name="road_junction2" parent="." instance=ExtResource("4_8dnxm")]
+[node name="Area3D" type="Area3D" parent="CharacterBody3D"]
+transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 0)
+script = ExtResource("4_va67g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0213614, 0.858171, -0.13079)
+shape = SubResource("CylinderShape3D_28psf")
 
 [node name="road_straight3" parent="." instance=ExtResource("1_e3m3f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="road_straight3"]
+
 [node name="road_corner_curved2" parent="." instance=ExtResource("5_v3hs3")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 0)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="road_corner_curved2"]
+
 [node name="road_tsplit2" parent="." instance=ExtResource("6_x5ji8")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 6)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="road_tsplit2"]
 
 [node name="road_corner_curved3" parent="." instance=ExtResource("5_v3hs3")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 6)
@@ -84,7 +103,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
 [node name="road_straight8" parent="." instance=ExtResource("1_e3m3f")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 0)
 
-[node name="streetlight2" parent="." instance=ExtResource("7_o8l48")]
+[node name="streetlight2" parent="." groups=["Scenery"] instance=ExtResource("7_o8l48")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
 
 [node name="road_straight5" parent="." instance=ExtResource("1_e3m3f")]
@@ -93,13 +112,13 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0,
 [node name="road_straight_crossing2" parent="." instance=ExtResource("8_mi4js")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 0)
 
-[node name="building_B2" parent="." instance=ExtResource("9_o3vwv")]
+[node name="building_B2" parent="." groups=["Scenery"] instance=ExtResource("9_o3vwv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
 
-[node name="building_E2" parent="." instance=ExtResource("10_401ut")]
+[node name="building_E2" parent="." groups=["Scenery"] instance=ExtResource("10_401ut")]
 transform = Transform3D(1.39091e-08, 0, 1, 0, 1, 0, -1, 0, 1.39091e-08, -2, 0, 4)
 
-[node name="trafficlight_B2" parent="." instance=ExtResource("11_yphxy")]
+[node name="trafficlight_B2" parent="." groups=["Scenery"] instance=ExtResource("11_yphxy")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, 3)
 
 [node name="road_straight6" parent="." instance=ExtResource("1_e3m3f")]
@@ -111,26 +130,31 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0,
 [node name="road_straight9" parent="." instance=ExtResource("1_e3m3f")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 6)
 
-[node name="building_H2" parent="." instance=ExtResource("12_ma1re")]
+[node name="building_H2" parent="." groups=["Scenery"] instance=ExtResource("12_ma1re")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
 
-[node name="building_G2" parent="." instance=ExtResource("13_28psf")]
+[node name="building_G2" parent="." groups=["Scenery"] instance=ExtResource("13_28psf")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2, 0, 2)
 
 [node name="base2" parent="." instance=ExtResource("14_a6adi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
 
-[node name="building_D2" parent="." instance=ExtResource("15_28psf")]
+[node name="building_D2" parent="." groups=["Scenery"] instance=ExtResource("15_28psf")]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -4, 0, 2)
 
-[node name="building_C2" parent="." instance=ExtResource("16_a6adi")]
+[node name="building_C2" parent="." groups=["Scenery"] instance=ExtResource("16_a6adi")]
 transform = Transform3D(-1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, -1, -2, 0, 2)
 
-[node name="car_stationwagon2" parent="." instance=ExtResource("17_va67g")]
+[node name="car_stationwagon2" parent="." groups=["Scenery"] instance=ExtResource("17_va67g")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0.136903, -0.342335)
 
-[node name="car_taxi2" parent="." instance=ExtResource("18_t0yo1")]
+[node name="car_taxi2" parent="." groups=["Scenery"] instance=ExtResource("18_t0yo1")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4, 0.143338, 4.37114e-08)
 
-[node name="car_police2" parent="." instance=ExtResource("19_6brkw")]
+[node name="car_police2" parent="." groups=["Scenery"] instance=ExtResource("19_6brkw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.321681, 0.0938654, 3.93196)
+
+[node name="StaticBody3D" parent="." instance=ExtResource("19_a6adi")]
+
+[node name="RigidBody3D" parent="." instance=ExtResource("20_va67g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
