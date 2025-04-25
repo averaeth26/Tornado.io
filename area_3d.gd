@@ -2,7 +2,8 @@ extends Area3D
 
 @export var inward_force:    float = 200.0   # how hard it pulls inward
 @export var spin_force:      float = 2.0   # how hard it spins around
-@export var lift_force:      float = 10.0  # how hard it lifts upward
+@export var lift_force:      float = 100.0  # how hard it lifts upward
+
 
 var bodies: Array[RigidBody3D] = []
 var joints := {}
@@ -23,11 +24,25 @@ func _on_body_exited(body: Node) -> void:
 	if body is RigidBody3D:
 		bodies.erase(body)
 
+
 func _physics_process(delta: float) -> void:
 	for body in bodies.duplicate():
 		if not is_instance_valid(body):
 			bodies.erase(body)
 			continue
+			
+		get_parent().scale.x += body.mass * 0.0001
+		get_parent().scale.y += body.mass * 0.0001
+		get_parent().scale.z += body.mass * 0.0001
+
+		body.scale *= 0.99
+		if body.scale.x <= 0.02:
+			body.free()
+			bodies.erase(body)
+			continue
+
+			
+
 			
 		#print(body)
 

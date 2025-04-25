@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://khe1qjsnnb0b"]
+
+[ext_resource type="PackedScene" uid="uid://bdhmdlfml8en4" path="res://models/road_corner_curved.gltf" id="1_800ig"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xcwsj"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.1, -1, 1, 0, -1, -1, 0.1, 1, 1, 0, 1, 1, 0.1, -1, 1, 0.1, 1)
+
+[node name="RoadCorner" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_xcwsj")
+
+[node name="road_corner_curved2" parent="." instance=ExtResource("1_800ig")]
+
+[editable path="road_corner_curved2"]

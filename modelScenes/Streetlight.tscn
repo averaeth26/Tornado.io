@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3p2qrhthx4g7"]
+
+[ext_resource type="PackedScene" uid="uid://b2ppc5p2xulw" path="res://models/streetlight.gltf" id="1_3sj7l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3sj7l"]
+size = Vector3(3.25537, 1.00223, 1)
+
+[node name="Streetlight" type="RigidBody3D"]
+
+[node name="collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.0898291, 0, 0, 0, 0.998101, 0, 0, 0, 0.0998101, -0.101492, 0.498535, 0)
+shape = SubResource("BoxShape3D_3sj7l")
+
+[node name="streetlight2" parent="." instance=ExtResource("1_3sj7l")]
+
+[editable path="streetlight2"]

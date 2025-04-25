@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7qnjm4cthlbe"]
+
+[ext_resource type="PackedScene" uid="uid://bj861iw8l56gq" path="res://models/trafficlight_B.gltf" id="1_71hqw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_71hqw"]
+size = Vector3(0.276001, 0.986938, 0.411621)
+
+[node name="TrafficLightLamppost" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.369427, -0.0847544, 0.482605, 0.038891)
+shape = SubResource("BoxShape3D_71hqw")
+
+[node name="trafficlight_B2" parent="." instance=ExtResource("1_71hqw")]
+
+[editable path="trafficlight_B2"]

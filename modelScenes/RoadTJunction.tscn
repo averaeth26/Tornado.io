@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg2qg6lduleaq"]
+
+[ext_resource type="PackedScene" uid="uid://t83icm1avxtx" path="res://models/road_tsplit.gltf" id="1_5lda0"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2tkj0"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.1, -1, 1, 0, -1, -1, 0.1, 1, 1, 0, 1, 1, 0.1, -1, 1, 0.1, 1)
+
+[node name="RoadTJunction" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_2tkj0")
+
+[node name="road_tsplit2" parent="." instance=ExtResource("1_5lda0")]
+
+[editable path="road_tsplit2"]

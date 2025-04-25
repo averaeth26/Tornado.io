@@ -12,7 +12,7 @@ height = 1.84326
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_28psf"]
 radius = 0.853027
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="TornadoCharacterController" type="CharacterBody3D"]
 script = ExtResource("1_uk4t0")
 
 [node name="Camera3D" type="Camera3D" parent="."]

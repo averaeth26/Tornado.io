@@ -8,9 +8,9 @@ points = PackedVector3Array(-1.00337, 1.19841, 0.0282498, -1.00337, 1.19841, 0.1
 [node name="BuildingH" type="RigidBody3D"]
 mass = 15.0
 
-[node name="building_H_withoutBase2" parent="." instance=ExtResource("1_07vdg")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building_H_withoutBase2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_72qjk")
+
+[node name="building_H_withoutBase2" parent="." instance=ExtResource("1_07vdg")]
 
 [editable path="building_H_withoutBase2"]
