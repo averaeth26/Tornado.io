@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1lqfbl2v8ay0"]
+
+[ext_resource type="PackedScene" uid="uid://cc1luw1dwi5l4" path="res://models/park_road_corner.gltf" id="1_8d1al"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pcpp1"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 1, 1, 0, 1, 1, 0.0999902, -1, 1, 0.0999902, 1)
+
+[node name="ParkRoadCorner" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_pcpp1")
+
+[node name="park_road_corner2" parent="." instance=ExtResource("1_8d1al")]

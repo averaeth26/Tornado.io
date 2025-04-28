@@ -1,0 +1,107 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctebjnc46ih3t"]
+
+[ext_resource type="PackedScene" uid="uid://knacughonr4b" path="res://modelScenes/Desert/DesertTileset.tscn" id="1_k3q8n"]
+[ext_resource type="PackedScene" uid="uid://cjxxjj8dmn4jw" path="res://modelScenes/Desert/CactusGood.tscn" id="1_xdo6c"]
+[ext_resource type="PackedScene" uid="uid://d41kaiupqtjt" path="res://modelScenes/Desert/Aloe.tscn" id="3_5rte5"]
+[ext_resource type="PackedScene" uid="uid://efqq0bibofjr" path="res://modelScenes/Desert/DeadTree1.tscn" id="4_ygp0c"]
+[ext_resource type="PackedScene" uid="uid://bc50cug608vwv" path="res://modelScenes/Desert/DeadTree2.tscn" id="5_6gaae"]
+
+[node name="DesertBlock" type="Node3D"]
+
+[node name="CactusGood" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1, 0)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood2" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 1, -1)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood4" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -2, 1, 1)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood5" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -2, 1, -6)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood6" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -4, 1, -10)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood7" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -6, 1, -8)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood8" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 1, 1, -10)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood9" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 0, 1, -13)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CactusGood3" parent="." instance=ExtResource("1_xdo6c")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -1, 1, -3)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DesertTileset" parent="." instance=ExtResource("1_k3q8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="Aloe" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, -4)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe2" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -6)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe3" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -4)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe4" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -10)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe7" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, -13)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe5" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -12)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Aloe6" parent="." instance=ExtResource("3_5rte5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 2)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTree1" parent="." instance=ExtResource("4_ygp0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.88203, 1.23371, -8.40469)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTree3" parent="." instance=ExtResource("4_ygp0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.88203, 1.18479, -12.4047)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTree2" parent="." instance=ExtResource("5_6gaae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59302, 1.17256, 1.85403)
+collision_layer = 2
+collision_mask = 2

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://0fnyw270bloi"]
+
+[ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
+[ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://CityBlock.tscn" id="2_dhq7r"]
+
+[node name="CityScene" type="Node3D"]
+
+[node name="TornadoCharacterController" parent="." instance=ExtResource("1_jofcs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+floor_snap_length = 1.0
+
+[node name="CityBlock" parent="." instance=ExtResource("2_dhq7r")]
+
+[node name="CityBlock2" parent="." instance=ExtResource("2_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
+
+[node name="CityBlock3" parent="." instance=ExtResource("2_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
+
+[node name="CityBlock4" parent="." instance=ExtResource("2_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 0)
+
+[editable path="TornadoCharacterController"]
+[editable path="CityBlock"]

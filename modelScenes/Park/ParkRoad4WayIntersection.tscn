@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bto14bbj5gan4"]
+
+[ext_resource type="PackedScene" uid="uid://eu64g0cjwssh" path="res://models/park_road_junction.gltf" id="1_6ghhy"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fhec8"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 1, 1, 0, 1, 1, 0.0999902, -1, 1, 0.0999902, 1)
+
+[node name="ParkRoad4WayIntersection" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_fhec8")
+
+[node name="park_road_junction2" parent="." instance=ExtResource("1_6ghhy")]

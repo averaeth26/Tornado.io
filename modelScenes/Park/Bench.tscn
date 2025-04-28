@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1vmj1s4b1rxq"]
+
+[ext_resource type="PackedScene" uid="uid://c8y6e3c1dhsyl" path="res://models/bench.gltf" id="1_meg84"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_si2od"]
+points = PackedVector3Array(-0.172905, 0.0599941, -0.075, -0.148943, 0, -0.0469117, -0.2, 0.0599941, -0.0478808, -0.172905, 0.1, -0.075, 0.172866, 0.0599941, -0.075, -0.148943, 0, 0.046897, 0.148904, 0, -0.0469117, -0.2, 0.1, -0.0478808, -0.2, 0.0599941, 0.0478661, 0.172866, 0.1, -0.075, 0.2, 0.0599941, -0.0478808, -0.172905, 0.0599941, 0.075, 0.148904, 0, 0.046897, -0.2, 0.1, 0.0478661, 0.2, 0.1, -0.0478808, 0.2, 0.0599941, 0.0478661, -0.172905, 0.1, 0.075, 0.172866, 0.0599941, 0.075, 0.2, 0.1, 0.0478661, 0.172866, 0.1, 0.075)
+
+[node name="Bench" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_si2od")
+
+[node name="bench2" parent="." instance=ExtResource("1_meg84")]
+
+[editable path="bench2"]

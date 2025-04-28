@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://efqq0bibofjr"]
+
+[ext_resource type="PackedScene" uid="uid://d0praalw8d2v8" path="res://models/Nature/DeadTree_1.gltf" id="1_1bv0d"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1bv0d"]
+height = 4.67334
+radius = 1.0
+
+[node name="DeadTree1" type="RigidBody3D"]
+mass = 3.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.304138, 2.21533, -0.0038147)
+shape = SubResource("CylinderShape3D_1bv0d")
+
+[node name="DeadTree_12" parent="." instance=ExtResource("1_1bv0d")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[editable path="DeadTree_12"]

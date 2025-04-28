@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d41kaiupqtjt"]
+
+[ext_resource type="PackedScene" uid="uid://cxrycd5xpev81" path="res://models/Desert/aloe.fbx" id="1_yxcd3"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_17tis"]
+points = PackedVector3Array(0.935412, 0.280058, -0.00335705, 0.0628895, 0.00678009, -0.043451, -0.35291, 0.329831, -0.863971, 0.363343, 0.683433, -0.636068, 0.443291, 0.759211, 0.299458, -0.113065, 0.471416, 0.932521, 0.0216204, 0.00590267, 0.0493982, 0.074286, 0.0161127, 0.0333958, 0.0143681, 0.000319063, -0.039934, 0.00383496, 0, -0.0522435, 0.00038147, 0.00678009, -0.0795004, 0.0143681, 0.000319063, 0.0332199, -0.828627, 0.814887, -1.58548e-05, -0.0420964, 0.0122839, -0.0286795, -0.555284, 0.206753, 0.329528, -0.0339807, 0.00845517, 0.0413091)
+
+[node name="Aloe" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_17tis")
+
+[node name="aloe" parent="." instance=ExtResource("1_yxcd3")]
+
+[editable path="aloe"]

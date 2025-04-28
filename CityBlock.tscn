@@ -1,136 +1,176 @@
-[gd_scene load_steps=21 format=3 uid="uid://djouu2ebofqfp"]
+[gd_scene load_steps=18 format=3 uid="uid://djouu2ebofqfp"]
 
-[ext_resource type="PackedScene" uid="uid://cg26igvl4y1nv" path="res://modelScenes/RoadStraight.tscn" id="1_yfvtc"]
-[ext_resource type="PackedScene" uid="uid://dclrg54l085gq" path="res://modelScenes/Base.tscn" id="2_k0pgl"]
-[ext_resource type="PackedScene" uid="uid://cjk1ncvvsb15a" path="res://modelScenes/BuildingG.tscn" id="8_e7865"]
-[ext_resource type="PackedScene" uid="uid://bjhfipss1s2nc" path="res://modelScenes/BuildingE.tscn" id="10_wuwkj"]
-[ext_resource type="PackedScene" uid="uid://c5l51ihigrkno" path="res://modelScenes/RoadJunction.tscn" id="12_x5npo"]
-[ext_resource type="PackedScene" uid="uid://dppqg10hm3rcr" path="res://modelScenes/PoliceCar.tscn" id="13_1trpv"]
-[ext_resource type="PackedScene" uid="uid://c224cwv2wph1b" path="res://modelScenes/BuildingC.tscn" id="15_c1phe"]
-[ext_resource type="PackedScene" uid="uid://bmgphfhdh2eil" path="res://modelScenes/BuildingD.tscn" id="16_3rouh"]
-[ext_resource type="PackedScene" uid="uid://b3p2qrhthx4g7" path="res://modelScenes/Streetlight.tscn" id="17_4p2k7"]
-[ext_resource type="PackedScene" uid="uid://cv7nxl7x355rq" path="res://modelScenes/BuildingB.tscn" id="17_kaw5u"]
-[ext_resource type="PackedScene" uid="uid://d23ltyh1exgwr" path="res://modelScenes/BuildingH.tscn" id="18_akqit"]
-[ext_resource type="PackedScene" uid="uid://d1uya37oqn4gd" path="res://modelScenes/YellowCar.tscn" id="19_0jrwj"]
-[ext_resource type="PackedScene" uid="uid://cg2qg6lduleaq" path="res://modelScenes/RoadTJunction.tscn" id="19_3um24"]
-[ext_resource type="PackedScene" uid="uid://c7qnjm4cthlbe" path="res://modelScenes/TrafficLightLamppost.tscn" id="19_k0pgl"]
-[ext_resource type="PackedScene" uid="uid://khe1qjsnnb0b" path="res://modelScenes/RoadCorner.tscn" id="19_yfvtc"]
-[ext_resource type="PackedScene" uid="uid://dgf5p41twl81h" path="res://modelScenes/GreenCar.tscn" id="20_elvfm"]
-[ext_resource type="PackedScene" uid="uid://qk2ia13x8ydr" path="res://modelScenes/RoadCrosswalk.tscn" id="20_yfvtc"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e3m3f"]
-sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
-ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
-
-[sub_resource type="Sky" id="Sky_ws5ob"]
-sky_material = SubResource("ProceduralSkyMaterial_e3m3f")
-
-[sub_resource type="Environment" id="Environment_bqqt8"]
-background_mode = 2
-sky = SubResource("Sky_ws5ob")
-tonemap_mode = 2
-glow_enabled = true
+[ext_resource type="PackedScene" uid="uid://cg26igvl4y1nv" path="res://modelScenes/City/RoadStraight.tscn" id="1_yfvtc"]
+[ext_resource type="PackedScene" uid="uid://dclrg54l085gq" path="res://modelScenes/City/Base.tscn" id="2_k0pgl"]
+[ext_resource type="PackedScene" uid="uid://cjk1ncvvsb15a" path="res://modelScenes/City/BuildingG.tscn" id="8_e7865"]
+[ext_resource type="PackedScene" uid="uid://bjhfipss1s2nc" path="res://modelScenes/City/BuildingE.tscn" id="10_wuwkj"]
+[ext_resource type="PackedScene" uid="uid://c5l51ihigrkno" path="res://modelScenes/City/RoadJunction.tscn" id="12_x5npo"]
+[ext_resource type="PackedScene" uid="uid://dppqg10hm3rcr" path="res://modelScenes/City/PoliceCar.tscn" id="13_1trpv"]
+[ext_resource type="PackedScene" uid="uid://c224cwv2wph1b" path="res://modelScenes/City/BuildingC.tscn" id="15_c1phe"]
+[ext_resource type="PackedScene" uid="uid://bmgphfhdh2eil" path="res://modelScenes/City/BuildingD.tscn" id="16_3rouh"]
+[ext_resource type="PackedScene" uid="uid://b3p2qrhthx4g7" path="res://modelScenes/City/Streetlight.tscn" id="17_4p2k7"]
+[ext_resource type="PackedScene" uid="uid://cv7nxl7x355rq" path="res://modelScenes/City/BuildingB.tscn" id="17_kaw5u"]
+[ext_resource type="PackedScene" uid="uid://d23ltyh1exgwr" path="res://modelScenes/City/BuildingH.tscn" id="18_akqit"]
+[ext_resource type="PackedScene" uid="uid://d1uya37oqn4gd" path="res://modelScenes/City/YellowCar.tscn" id="19_0jrwj"]
+[ext_resource type="PackedScene" uid="uid://cg2qg6lduleaq" path="res://modelScenes/City/RoadTJunction.tscn" id="19_3um24"]
+[ext_resource type="PackedScene" uid="uid://c7qnjm4cthlbe" path="res://modelScenes/City/TrafficLightLamppost.tscn" id="19_k0pgl"]
+[ext_resource type="PackedScene" uid="uid://khe1qjsnnb0b" path="res://modelScenes/City/RoadCorner.tscn" id="19_yfvtc"]
+[ext_resource type="PackedScene" uid="uid://dgf5p41twl81h" path="res://modelScenes/City/GreenCar.tscn" id="20_elvfm"]
+[ext_resource type="PackedScene" uid="uid://qk2ia13x8ydr" path="res://modelScenes/City/RoadCrosswalk.tscn" id="20_yfvtc"]
 
 [node name="CityBlock" type="Node3D"]
 
 [node name="RoadStraight3" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_bqqt8")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-shadow_enabled = true
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight2" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="BuildingG" parent="." instance=ExtResource("8_e7865")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 0, 2)
+collision_layer = 2
+collision_mask = 2
 
 [node name="BuildingE" parent="." instance=ExtResource("10_wuwkj")]
 transform = Transform3D(-5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, -2, 0, 4)
+collision_layer = 2
+collision_mask = 2
 
 [node name="RoadJunction" parent="." instance=ExtResource("12_x5npo")]
+collision_layer = 3
+collision_mask = 3
 
 [node name="PoliceCar" parent="." instance=ExtResource("13_1trpv")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.298496, 0.140651, 3.89859)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Base2" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
 [node name="BuildingC" parent="." instance=ExtResource("15_c1phe")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 2)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Base3" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="BuildingD" parent="." instance=ExtResource("16_3rouh")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 2)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Base4" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight4" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight5" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight6" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight7" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="BuildingB" parent="." instance=ExtResource("17_kaw5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Base5" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="BuildingH" parent="." instance=ExtResource("18_akqit")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Base6" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="TaxiCar" parent="." instance=ExtResource("19_0jrwj")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4, 0.129807, 0)
+collision_layer = 2
+collision_mask = 2
 
 [node name="GreenCar" parent="." instance=ExtResource("20_elvfm")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0.124654, -0.294803)
+collision_layer = 2
+collision_mask = 2
 
 [node name="RoadCrosswalk" parent="." instance=ExtResource("20_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 6)
 
 [node name="RoadCrosswalk2" parent="." instance=ExtResource("20_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadTJunction" parent="." instance=ExtResource("19_3um24")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadCorner" parent="." instance=ExtResource("19_yfvtc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadCorner2" parent="." instance=ExtResource("19_yfvtc")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="TrafficLightLamppost" parent="." instance=ExtResource("19_k0pgl")]
 transform = Transform3D(1.19209e-07, 0, 1, 0, 1, 0, -1, 0, 1.19209e-07, -1, 0, 5)
+collision_layer = 2
+collision_mask = 2
 
 [node name="RoadStraight8" parent="." instance=ExtResource("1_yfvtc")]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base7" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Streetlight" parent="." instance=ExtResource("17_4p2k7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.11674, 3)
+collision_layer = 2
+collision_mask = 2

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvafpbexl3i64"]
+
+[ext_resource type="PackedScene" uid="uid://bqpwwr72b30ly" path="res://models/park_wall_innerCorner.gltf" id="1_cixe8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xey05"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999608, -1, 0.999804, 0, -1, -1, 0.0999608, 1, 0.999804, 0, 1, 0.349844, 0.4, 0.999804, 0.367659, 0.4, 0.743148, 0.458497, 0.4, 0.584377, 0.584378, 0.4, 0.458496, 0.743148, 0.4, 0.367659, 0.999804, 0.4, 0.349843, 0.999804, 0.0999608, -1, 0.649961, 0.35, 1, 0.999804, 0.0999608, 1, 0.599844, 0.4, 0.999804, 0.999804, 0.4, 0.599843)
+
+[node name="ParkWallInnerCorner" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_xey05")
+
+[node name="park_wall_innerCorner2" parent="." instance=ExtResource("1_cixe8")]

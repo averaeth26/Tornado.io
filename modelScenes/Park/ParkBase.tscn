@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://5x4ei3s70eoi"]
+
+[ext_resource type="PackedScene" uid="uid://bfp0li8ypxw15" path="res://models/park_base.gltf" id="1_4mrt6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_an87w"]
+points = PackedVector3Array(-1, 0, -1, -1, 0.0999902, -1, 1, 0, -1, -1, 0, 1, -1, 0.0999902, 1, 1, 0.0999902, -1, 1, 0, 1, 1, 0.0999902, 1)
+
+[node name="ParkBase" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_an87w")
+
+[node name="park_base2" parent="." instance=ExtResource("1_4mrt6")]

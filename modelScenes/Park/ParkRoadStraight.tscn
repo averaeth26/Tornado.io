@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn87qfa7pasvj"]
+
+[ext_resource type="PackedScene" uid="uid://kgqoajrj8dtp" path="res://models/park_road_straight.gltf" id="1_cbpau"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ynoil"]
+points = PackedVector3Array(-1, 0, -1, -1, 0, 1, -1, 0.0999902, -1, 1, 0, -1, -1, 0.0999902, 1, 1, 0, 1, 1, 0.0999902, -1, 1, 0.0999902, 1)
+
+[node name="ParkRoadStraight" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ynoil")
+
+[node name="park_road_straight2" parent="." instance=ExtResource("1_cbpau")]

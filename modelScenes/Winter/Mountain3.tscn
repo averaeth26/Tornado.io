@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh41j583heer6"]
+
+[ext_resource type="PackedScene" uid="uid://dwxvpvf5bchfm" path="res://models/Winter/Mountain_winter_003.fbx" id="1_uikld"]
+[ext_resource type="Texture2D" uid="uid://dvgf58bvqc7sr" path="res://models/Winter/T_Mountains_winter_32.png" id="2_ae3nf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_55e5p"]
+albedo_texture = ExtResource("2_ae3nf")
+
+[node name="Mountain3" type="StaticBody3D"]
+
+[node name="Mountain_winter_003" parent="." instance=ExtResource("1_uikld")]
+
+[node name="Mountain_winter_003" parent="Mountain_winter_003" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_55e5p")
+
+[editable path="Mountain_winter_003"]

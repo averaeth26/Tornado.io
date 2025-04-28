@@ -1,16 +1,60 @@
-[gd_scene load_steps=3 format=3 uid="uid://0fnyw270bloi"]
+[gd_scene load_steps=9 format=3 uid="uid://0fnyw270bloi"]
 
 [ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
 [ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://CityBlock.tscn" id="2_dhq7r"]
+[ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://ParkBlock.tscn" id="3_dhq7r"]
+[ext_resource type="PackedScene" uid="uid://ctebjnc46ih3t" path="res://DesertBlock.tscn" id="4_usw5p"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jofcs"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jofcs"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_ws5ob"]
+sky_material = SubResource("ProceduralSkyMaterial_jofcs")
+
+[sub_resource type="Environment" id="Environment_dhq7r"]
+background_mode = 2
+sky = SubResource("Sky_ws5ob")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="CityScene" type="Node3D"]
 
 [node name="TornadoCharacterController" parent="." instance=ExtResource("1_jofcs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" parent="TornadoCharacterController" index="2"]
+shape = SubResource("CylinderShape3D_jofcs")
+disabled = false
+
+[node name="Area3D" parent="TornadoCharacterController" index="3"]
+collision_layer = 3
+collision_mask = 3
 
 [node name="CityBlock" parent="." instance=ExtResource("2_dhq7r")]
 
 [node name="CityBlock2" parent="." instance=ExtResource("2_dhq7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
 
+[node name="CityBlock3" parent="." instance=ExtResource("2_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
+
+[node name="CityBlock4" parent="." instance=ExtResource("2_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dhq7r")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.500003, -0.749999, 0.43301, 0, 0.499998, 0.866026, -0.866024, -0.433016, 0.250001, 0, 0, 0)
+shadow_enabled = true
+
+[node name="DesertBlock" parent="." instance=ExtResource("4_usw5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 14)
+
+[node name="ParkBlock" parent="." instance=ExtResource("3_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
+
 [editable path="TornadoCharacterController"]
-[editable path="CityBlock"]

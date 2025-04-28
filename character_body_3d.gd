@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 @export var speed = 5	# speed in meters/sec
-@onready var interact_zone = $Area3D
-var current_target: Node = null
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
 
 func _physics_process(delta):
 	var direction := Vector3.ZERO
@@ -10,5 +10,9 @@ func _physics_process(delta):
 	direction.z = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 		
 	velocity = direction*speed
-	
+	print(is_on_floor())
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+		
 	move_and_slide()
+	
