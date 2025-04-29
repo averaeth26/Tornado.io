@@ -317,6 +317,166 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.65664, 0.0564165, 0.984744
 collision_layer = 2
 collision_mask = 2
 
+[node name="TreeA34" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.38206, 0, 1.59622)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA35" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(1, 0, 5.56363e-08, 0, 1, 0, -5.56363e-08, 0, 1, -7.81188, 0, 2.81929)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA36" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, -7.16149, 0, 3.93073)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA37" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.99824, 0, -0.0593064, 0, 1, 0, 0.0593064, 0, -0.99824, -7.52726, 0, 4.96598)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA38" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, 0.984808, -6.36252, 0, 5.91118)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA39" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.737053, 0, -0.675835, 0, 1, 0, 0.675835, 0, -0.737053, -4.55791, 0, 5.91118)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA40" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.737053, 0, -0.675835, 0, 1, 0, 0.675835, 0, -0.737053, -5.83883, 0, 4.76577)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA41" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.90467, 0, 5.33049)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA42" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.01535, 0, 4.99049)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA43" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, -0.984808, -1.65833, 0, 4.94258)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA44" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -2.11456, 0, 5.84707)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA20" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.29458, 0.0564165, 5.71012)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA21" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.58481, 0.0564165, 5.92588)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA22" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.97323, 0.0564165, 2.62757)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA23" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.61524, 0.0564165, 5.97214)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA24" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.13419, 0.0564165, 5.77673)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA45" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.53699, 0, 3.18732)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA46" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.76399, 0, 3.60578)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA47" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.86935, 0, 2.94512)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA48" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.90795, 0, 3.30128)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA49" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.84232, 0, 2.12783)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA50" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.82559, 0, 0.3233)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA51" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.6921, 0, 1.61478)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA52" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.2296, 0, -1.32449)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA53" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.89991, 0, -0.210704)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA54" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.83016, 0, -2.56719)
+collision_layer = 2
+collision_mask = 2
+
+[node name="TreeA55" parent="." instance=ExtResource("5_b2v2x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.73884, 0, -2.11936)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA25" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.63137, 0.0564165, 1.0618)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA26" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.86834, 0.0564165, 3.34993)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA27" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.56451, 0.0564165, 2.76895)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA28" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.87781, 0.0564165, -0.619895)
+collision_layer = 2
+collision_mask = 2
+
+[node name="BushA29" parent="." instance=ExtResource("6_3303g")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5.65942, 0.0564165, -3.09903)
+collision_layer = 2
+collision_mask = 2
+
 [node name="BushA4" parent="." instance=ExtResource("6_3303g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.0564165, -0.0176388)
 collision_layer = 2

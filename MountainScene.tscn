@@ -1,0 +1,111 @@
+[gd_scene load_steps=5 format=3 uid="uid://vw0sciyspw38"]
+
+[ext_resource type="PackedScene" uid="uid://dh41j583heer6" path="res://modelScenes/Winter/Mountain3.tscn" id="1_ssyit"]
+[ext_resource type="PackedScene" uid="uid://cw7ayobyhq4a7" path="res://modelScenes/Winter/PineTree.tscn" id="2_87qb0"]
+[ext_resource type="PackedScene" uid="uid://brhg4k4m8lpaj" path="res://modelScenes/Winter/Hill1.tscn" id="3_87qb0"]
+[ext_resource type="PackedScene" uid="uid://bc50cug608vwv" path="res://modelScenes/Desert/DeadTree2.tscn" id="4_4epdo"]
+
+[node name="MountainScene" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="Mountain3" parent="." instance=ExtResource("1_ssyit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 12)
+gravity_scale = 0.0
+
+[node name="PineTree" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree2" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -10)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree3" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 6.32974, -10)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree4" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 3, 10)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree5" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 7, 23)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree6" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, 28)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree7" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, 28)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="PineTree8" parent="." instance=ExtResource("2_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2, 11)
+collision_layer = 2
+collision_mask = 2
+mass = 6.0
+
+[node name="Hill1" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Hill6" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Hill2" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 22, 0, 24)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Hill5" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 32, 0, 11)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Hill3" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -4, 0, 22)
+collision_layer = 3
+collision_mask = 3
+
+[node name="Hill4" parent="." instance=ExtResource("3_87qb0")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 31, 0, -7)
+collision_layer = 3
+collision_mask = 3
+
+[node name="DeadTree2" parent="." instance=ExtResource("4_4epdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7, 16)
+freeze = true
+freeze_mode = 1
+
+[node name="DeadTree5" parent="." instance=ExtResource("4_4epdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 2, -1)
+freeze = true
+freeze_mode = 1
+
+[node name="DeadTree3" parent="." instance=ExtResource("4_4epdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 7, 23)
+freeze = true
+freeze_mode = 1
+
+[node name="DeadTree4" parent="." instance=ExtResource("4_4epdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, 38)
+freeze = true
+freeze_mode = 1

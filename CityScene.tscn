@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://0fnyw270bloi"]
+[gd_scene load_steps=10 format=3 uid="uid://0fnyw270bloi"]
 
 [ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
 [ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://CityBlock.tscn" id="2_dhq7r"]
 [ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://ParkBlock.tscn" id="3_dhq7r"]
 [ext_resource type="PackedScene" uid="uid://ctebjnc46ih3t" path="res://DesertBlock.tscn" id="4_usw5p"]
+[ext_resource type="PackedScene" uid="uid://vw0sciyspw38" path="res://MountainScene.tscn" id="5_gtpdy"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jofcs"]
 
@@ -23,15 +24,18 @@ glow_enabled = true
 [node name="CityScene" type="Node3D"]
 
 [node name="TornadoCharacterController" parent="." instance=ExtResource("1_jofcs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0809402, 1, 0.0341835)
+collision_layer = 9
+collision_mask = 9
 
 [node name="CollisionShape3D" parent="TornadoCharacterController" index="2"]
 shape = SubResource("CylinderShape3D_jofcs")
 disabled = false
 
 [node name="Area3D" parent="TornadoCharacterController" index="3"]
-collision_layer = 3
-collision_mask = 3
+transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0.0363312, 0, -0.0153446)
+collision_layer = 7
+collision_mask = 7
 
 [node name="CityBlock" parent="." instance=ExtResource("2_dhq7r")]
 
@@ -56,5 +60,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 14)
 
 [node name="ParkBlock" parent="." instance=ExtResource("3_dhq7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
+
+[node name="ParkBlock2" parent="." instance=ExtResource("3_dhq7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
+
+[node name="MountainScene" parent="." instance=ExtResource("5_gtpdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.2218, 0.539836, -13.1889)
 
 [editable path="TornadoCharacterController"]

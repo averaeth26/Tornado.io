@@ -24,6 +24,7 @@ func _ready() -> void:
 func _on_body_entered(body):
 	if body is RigidBody3D and not bodies.has(body):
 		bodies.append(body)
+		print(body.name)
 
 
 func _on_body_exited(body: Node) -> void:
@@ -54,15 +55,16 @@ func _physics_process(delta: float) -> void:
 			continue
 			
 
-		print(new_lift_force, "   ", body.mass*gravity)
 		if gravity*body.mass < new_lift_force:
+			if body.freeze == true:
+				body.freeze = false
 			
 			#objectSize = sum_sizes(find_mesh_descendants(body))
 			#print(objectSize)
 			#playerSize = sum_sizes(find_mesh_descendants(get_parent()))*get_parent().scale
 			#print(playerSize)
 			
-			get_parent().scale += sum_sizes(find_mesh_descendants(body))* body.scale * 0.0005
+			get_parent().scale += sum_sizes(find_mesh_descendants(body))*body.scale * 0.001
 			#get_parent().get_child(0).fov += sum_sizes(find_mesh_descendants(body))* body.scale.x * 0.001
 
 			#get_parent().scale.z += sum_sizes(find_mesh_descendants(body))* body.scale.z * 0.001
@@ -100,3 +102,5 @@ func _physics_process(delta: float) -> void:
 
 			# lift up
 			body.apply_central_force(Vector3.UP * lift_force)
+		else:
+			print(new_lift_force, "   ", body.mass*gravity)

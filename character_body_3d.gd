@@ -10,9 +10,9 @@ func _physics_process(delta):
 	direction.z = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 		
 	velocity = direction*speed
-	print(is_on_floor())
+	#print(is_on_floor())
 	if not is_on_floor():
-		velocity.y -= gravity * delta
+		velocity.y -= gravity * 0.1
 		
 	move_and_slide()
 	
