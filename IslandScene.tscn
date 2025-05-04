@@ -1,0 +1,112 @@
+[gd_scene load_steps=5 format=3 uid="uid://1g33l8277xpe"]
+
+[ext_resource type="PackedScene" uid="uid://dcglx8aal4buf" path="res://modelScenes/Beach/PalmTree.tscn" id="1_ye585"]
+[ext_resource type="PackedScene" uid="uid://rlcegqioaaxp" path="res://modelScenes/Beach/VolcanoIsland.tscn" id="2_chvhg"]
+[ext_resource type="PackedScene" uid="uid://b8r0xdfyf4282" path="res://modelScenes/Beach/IslandPlant.tscn" id="3_pgsyg"]
+[ext_resource type="PackedScene" uid="uid://d41kaiupqtjt" path="res://modelScenes/Desert/Aloe.tscn" id="4_6dbgo"]
+
+[node name="IslandScene" type="Node3D"]
+
+[node name="PalmTree" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, -2.87924, 14.6232)
+
+[node name="PalmTree2" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 6.50928, -2.87924, 13.3342)
+
+[node name="PalmTree3" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 10.7342, -2.87924, 9.26494)
+
+[node name="PalmTree4" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8045, -2.99136, 2.57532)
+
+[node name="PalmTree5" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 13.8045, -3.28393, -7.47426)
+
+[node name="PalmTree6" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 15.0742, -3.29543, -2.47095)
+
+[node name="PalmTree7" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 6.77658, -3.33676, -13.8344)
+
+[node name="PalmTree8" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.594865, 0, -0.803826, 0, 1, 0, 0.803826, 0, 0.594865, 1.19758, -3.32307, -16.9184)
+
+[node name="PalmTree9" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -5.21147, -3.19369, -14.6799)
+
+[node name="PalmTree10" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.411435, 0, 0.911439, 0, 1, 0, -0.911439, 0, 0.411435, -11.5855, -3.47403, -12.4947)
+
+[node name="PalmTree11" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -14.3922, -3.26521, -6.99283)
+
+[node name="PalmTree12" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7481, -3.28676, -0.0974007)
+
+[node name="PalmTree13" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(0.822164, 0, 0.569251, 0, 1, 0, -0.569251, 0, 0.822164, -12.5741, -3.25176, 7.04464)
+
+[node name="PalmTree14" parent="." instance=ExtResource("1_ye585")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.37732, -3.27883, 12.3566)
+
+[node name="VolcanoIsland" parent="." instance=ExtResource("2_chvhg")]
+
+[node name="IslandPlant" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.31401, -2.58782, 5.26811)
+
+[node name="IslandPlant3" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76979, -2.77977, 11.166)
+
+[node name="IslandPlant2" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2249, -3.21484, 0.812146)
+
+[node name="IslandPlant4" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.73734, -3.48911, -15.7653)
+
+[node name="IslandPlant10" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.379, -3.35084, -11.7352)
+
+[node name="IslandPlant5" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6491, -2.92585, -13.5311)
+
+[node name="IslandPlant6" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.09901, -3.27631, -13.5311)
+
+[node name="IslandPlant7" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5277, -3.27631, 6.92775)
+
+[node name="IslandPlant8" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23691, -2.69213, 11.4185)
+
+[node name="IslandPlant9" parent="." instance=ExtResource("3_pgsyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.938961, -3.5843, 17.1321)
+
+[node name="Aloe" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0894, -3.36441, 8.90972)
+
+[node name="Aloe3" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.91574, -3.36441, 16.065)
+
+[node name="Aloe10" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.76315, -3.2806, 13.717)
+
+[node name="Aloe2" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1458, -3.14307, -5.05867)
+
+[node name="Aloe4" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.47098, -2.85029, -10.7389)
+
+[node name="Aloe5" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.48153, -3.08716, -14.0781)
+
+[node name="Aloe6" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.52628, -3.62343, -17.6789)
+
+[node name="Aloe7" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2032, -3.62343, -9.80892)
+
+[node name="Aloe8" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2032, -3.24874, 2.0806)
+
+[node name="Aloe9" parent="." instance=ExtResource("4_6dbgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.91164, -2.56062, 8.38062)

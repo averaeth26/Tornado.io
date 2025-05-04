@@ -1,10 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://0fnyw270bloi"]
+[gd_scene load_steps=13 format=3 uid="uid://0fnyw270bloi"]
 
 [ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
 [ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://CityBlock.tscn" id="2_dhq7r"]
 [ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://ParkBlock.tscn" id="3_dhq7r"]
 [ext_resource type="PackedScene" uid="uid://ctebjnc46ih3t" path="res://DesertBlock.tscn" id="4_usw5p"]
 [ext_resource type="PackedScene" uid="uid://vw0sciyspw38" path="res://MountainScene.tscn" id="5_gtpdy"]
+[ext_resource type="PackedScene" uid="uid://1g33l8277xpe" path="res://IslandScene.tscn" id="6_tpiau"]
+[ext_resource type="Script" uid="uid://chlli88quu1h3" path="res://panel.gd" id="7_qv6mg"]
+[ext_resource type="PackedScene" uid="uid://dt7o8iiskvcv7" path="res://MetroScene.tscn" id="8_kxoq8"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jofcs"]
 
@@ -66,5 +69,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
 
 [node name="MountainScene" parent="." instance=ExtResource("5_gtpdy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.2218, 0.539836, -13.1889)
+
+[node name="IslandScene" parent="." instance=ExtResource("6_tpiau")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 4, 42)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Timer" type="Panel" parent="CanvasLayer"]
+offset_right = 101.0
+offset_bottom = 25.0
+script = ExtResource("7_qv6mg")
+
+[node name="Minutes" type="Label" parent="CanvasLayer/Timer"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "00"
+horizontal_alignment = 2
+
+[node name="Seconds" type="Label" parent="CanvasLayer/Timer"]
+layout_mode = 0
+offset_left = 23.0
+offset_right = 63.0
+offset_bottom = 23.0
+text = ":00"
+horizontal_alignment = 2
+
+[node name="Milliseconds" type="Label" parent="CanvasLayer/Timer"]
+layout_mode = 0
+offset_left = 51.0
+offset_right = 91.0
+offset_bottom = 23.0
+text = "000"
+horizontal_alignment = 2
+
+[node name="MetroScene" parent="." instance=ExtResource("8_kxoq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 42)
 
 [editable path="TornadoCharacterController"]

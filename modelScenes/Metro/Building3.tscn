@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b14bwdi4fwb5v"]
+
+[ext_resource type="PackedScene" uid="uid://wpu7s41ewoyk" path="res://models/Metro/Building3.glb" id="1_3q7fg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nn6em"]
+points = PackedVector3Array(1.78108, 5.72205e-06, 26.1042, 1.78147, -1.80928, 23.029, 1.78147, -0.554753, 23.029, 1.78147, 5.72205e-06, 22.993, 0.437698, 5.72205e-06, 26.1042, 1.74506, -4.10149, 26.1042, 1.78108, -13.5909, 26.1038, 1.78147, -5.35468, 22.5122, 1.78147, 5.72205e-06, 22.1042, -0.906077, 5.72205e-06, 26.1038, 0.401285, -0.0372438, 26.1042, -0.906077, -13.5909, 26.1038, 1.78108, -13.5909, 22.1042, 1.78147, -2.32812, 22.1402, -1.77413, 5.72205e-06, 22.1042, 1.78147, -1.77336, 22.1042, -2.21853, 5.72205e-06, 24.7913, -2.21853, -13.5909, 24.7913, -2.21853, -13.5909, 22.1042, -2.21853, 5.72205e-06, 24.3434, -2.21853, -0.00132465, 22.1042)
+
+[node name="Building3" type="RigidBody3D"]
+mass = 28.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3.57628e-07, 7.54979e-08, 1, -7.54979e-08, -1, 7.54979e-08, 1, -7.54979e-08, -3.57628e-07, -24.0243, -7.06036e-05, 0.218523)
+shape = SubResource("ConvexPolygonShape3D_nn6em")
+
+[node name="Building3" parent="." instance=ExtResource("1_3q7fg")]
+
+[editable path="Building3"]

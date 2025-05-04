@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://qqnrxd56vy45"]
+
+[ext_resource type="PackedScene" uid="uid://dmgwm0ptx68wf" path="res://models/Nature/Bush_Common_Flowers.gltf" id="1_aiqji"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_txl1d"]
+size = Vector3(1.73535, 1.17383, 1.60767)
+
+[node name="IslandBush" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0209961, 0.582708, -0.0172119)
+shape = SubResource("BoxShape3D_txl1d")
+
+[node name="Bush_Common_Flowers2" parent="." instance=ExtResource("1_aiqji")]
+
+[editable path="Bush_Common_Flowers2"]

@@ -20,7 +20,6 @@ func _ready() -> void:
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
 
-
 func _on_body_entered(body):
 	if body is RigidBody3D and not bodies.has(body):
 		bodies.append(body)
@@ -44,7 +43,7 @@ func find_mesh_descendants(body: Node) -> Array:
 func sum_sizes(arr: Array) -> float:
 	var totalSize := 0
 	for obj in arr:
-		totalSize += obj.get_aabb().size.length()*obj.get_parent().scale.x**3
+		totalSize += obj.get_aabb().size.length()
 	return totalSize
 
 
@@ -95,12 +94,13 @@ func _physics_process(delta: float) -> void:
 				var tangential_dir = radial_dir.cross(Vector3.UP)
 
 				# pull inward (centripetal)
-				body.apply_central_force(radial_dir * inward_force)
+				body.apply_central_force(radial_dir * new_inward_force)
 				# print(radial_dir * inward_force)
 				# spin around
-				body.apply_central_force(tangential_dir * spin_force * distFromCenter)
+				body.apply_central_force(tangential_dir * new_spin_force * distFromCenter)
 
 			# lift up
-			body.apply_central_force(Vector3.UP * lift_force)
+			body.apply_central_force(Vector3.UP * new_lift_force)
 		else:
-			print(new_lift_force, "   ", body.mass*gravity)
+			pass
+			#print(new_lift_force, "   ", body.mass*gravity)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcglx8aal4buf"]
+
+[ext_resource type="PackedScene" uid="uid://dk06jrci4wekc" path="res://models/Beach/PalmTree_05.fbx" id="1_tfoj1"]
+[ext_resource type="Texture2D" uid="uid://cx7hmigdpce3t" path="res://models/Beach/TropicalEnvironmentLite_Texture_01.png" id="2_hprg7"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m3ep3"]
+height = 4.06818
+radius = 1.28809
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2usw"]
+albedo_texture = ExtResource("2_hprg7")
+
+[node name="PalmTree" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.917769, 2.06363, 0.838817)
+shape = SubResource("CylinderShape3D_m3ep3")
+
+[node name="PalmTree_05" parent="." instance=ExtResource("1_tfoj1")]
+
+[node name="PalmTree_05_LOD0" parent="PalmTree_05" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_i2usw")
+
+[node name="PalmTree_05_LOD1" parent="PalmTree_05" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_i2usw")
+
+[node name="PalmTree_05_LOD2" parent="PalmTree_05" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_i2usw")
+
+[editable path="PalmTree_05"]
