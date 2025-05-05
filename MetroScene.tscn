@@ -16,665 +16,1109 @@
 [node name="MetroScene" type="Node3D"]
 
 [node name="Base" parent="." instance=ExtResource("1_phjs5")]
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base2" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base3" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base4" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base5" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base6" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base7" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base8" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base9" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base10" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base11" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base12" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base13" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base14" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base15" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base16" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base17" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base18" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base19" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base20" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base21" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base22" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base23" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base24" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base25" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base26" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base27" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base28" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base29" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base30" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base31" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base32" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base33" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base34" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base35" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base36" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base37" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base38" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base39" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base40" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base41" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base42" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base43" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base44" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base45" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base46" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base47" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base48" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base49" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base50" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base51" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base52" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base53" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base54" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base55" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base56" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base57" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base58" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base59" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base60" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base61" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base62" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base63" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base64" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base65" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base66" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base67" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base68" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base69" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base70" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base71" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base72" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base73" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base74" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base75" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base76" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base77" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base78" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base79" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base80" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base81" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base82" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base83" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base84" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(0.999986, -9.10209e-05, 0.00523517, 9.09793e-05, 1, 8.18147e-06, -0.00523517, -7.70502e-06, 0.999986, 24, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base85" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base86" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base87" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base88" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base89" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base90" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base91" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base92" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base93" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base94" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base95" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base96" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base97" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base98" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base99" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base100" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base101" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base102" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base103" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base104" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base105" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base106" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base107" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base108" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base109" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base110" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base111" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base112" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base113" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(0.999904, 0.00249521, -0.0136002, -0.0025033, 0.999997, -0.000577857, 0.0135987, 0.00061185, 0.999907, -2, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base114" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base115" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base116" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base117" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base118" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base119" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base120" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base121" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base122" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base123" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base124" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base125" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base126" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base127" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base128" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base129" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base130" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base131" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base132" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base133" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base134" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base135" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base136" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base137" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base138" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base139" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base140" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base141" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base142" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base143" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Base144" parent="." instance=ExtResource("1_phjs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Building1" parent="." instance=ExtResource("2_gp5mi")]
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building2" parent="." instance=ExtResource("3_7dw3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40708, 0, 5)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building3" parent="." instance=ExtResource("4_x766e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building5" parent="." instance=ExtResource("5_sy166")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 5)
+collision_layer = 2
+collision_mask = 2
 
 [node name="RoadStraight" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight2" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight3" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight4" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight5" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight6" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight7" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight8" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight9" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight10" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight11" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight12" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight13" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight14" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight15" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight16" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight17" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight18" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight19" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight20" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight21" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight22" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 22, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight23" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight24" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight25" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight26" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 24)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight27" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight28" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 22)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight29" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight30" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 20)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight31" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight32" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 18)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight33" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight34" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 16)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight35" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight36" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 14)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight37" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight38" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight39" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight40" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 8)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight41" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight42" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight43" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight44" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 4)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight45" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight46" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight47" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight48" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 0)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight49" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 12, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadStraight50" parent="." instance=ExtResource("6_x766e")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, -2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadJunction" parent="." instance=ExtResource("7_fjm6b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadJunction2" parent="." instance=ExtResource("7_fjm6b")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadJunction3" parent="." instance=ExtResource("7_fjm6b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+collision_layer = 3
+collision_mask = 3
 
 [node name="RoadJunction4" parent="." instance=ExtResource("7_fjm6b")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 12)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Building6" parent="." instance=ExtResource("8_4awwk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 23)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building4" parent="." instance=ExtResource("9_cpfpg")]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 16, 0, 19)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building8" parent="." instance=ExtResource("9_cpfpg")]
 transform = Transform3D(8.74228e-08, 0, 1, 0, 1, 0, -1, 0, 8.74228e-08, 16, 0, 16)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building7" parent="." instance=ExtResource("4_x766e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 16)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building9" parent="." instance=ExtResource("3_7dw3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5929, 0, 22)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building10" parent="." instance=ExtResource("10_qeitv")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6, 0, 16)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building11" parent="." instance=ExtResource("4_x766e")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 22)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building13" parent="." instance=ExtResource("5_sy166")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 16)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building12" parent="." instance=ExtResource("2_gp5mi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 22)
+collision_layer = 2
+collision_mask = 2
 
 [node name="TrafficLightLamppost" parent="." instance=ExtResource("11_cpfpg")]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, 9, 0, 13)
+collision_layer = 2
+collision_mask = 2
 
 [node name="TrafficLightLamppost2" parent="." instance=ExtResource("11_cpfpg")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13, 0, 13)
+collision_layer = 2
+collision_mask = 2
 
 [node name="TrafficLightLamppost3" parent="." instance=ExtResource("11_cpfpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 9)
+collision_layer = 2
+collision_mask = 2
 
 [node name="TrafficLightLamppost4" parent="." instance=ExtResource("11_cpfpg")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9, 0, 9)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Streetlight" parent="." instance=ExtResource("12_qeitv")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, 13)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Streetlight2" parent="." instance=ExtResource("12_qeitv")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1, 0, 13)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building15" parent="." instance=ExtResource("2_gp5mi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building16" parent="." instance=ExtResource("3_7dw3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5929, 0, 0)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building17" parent="." instance=ExtResource("8_4awwk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 5)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building18" parent="." instance=ExtResource("8_4awwk")]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 19, 0, 6)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Building14" parent="." instance=ExtResource("5_sy166")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.5291, 0, 6)
+collision_layer = 2
+collision_mask = 2

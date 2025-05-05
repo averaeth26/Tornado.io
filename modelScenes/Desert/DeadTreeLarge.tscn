@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://8dyhk1v6f1o6"]
+
+[ext_resource type="PackedScene" uid="uid://bckxvlety6uhv" path="res://models/Nature/Tree_Bare_2_C_Color1.gltf" id="1_3a7nh"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_h4dnl"]
+height = 3.77003
+
+[node name="DeadTreeLarger" type="RigidBody3D"]
+mass = 2.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.66835, 0)
+shape = SubResource("CylinderShape3D_h4dnl")
+
+[node name="Tree_Bare_2_C_Color12" parent="." instance=ExtResource("1_3a7nh")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[editable path="Tree_Bare_2_C_Color12"]

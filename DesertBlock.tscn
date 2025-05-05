@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctebjnc46ih3t"]
+[gd_scene load_steps=8 format=3 uid="uid://ctebjnc46ih3t"]
 
 [ext_resource type="PackedScene" uid="uid://knacughonr4b" path="res://modelScenes/Desert/DesertTileset.tscn" id="1_k3q8n"]
 [ext_resource type="PackedScene" uid="uid://cjxxjj8dmn4jw" path="res://modelScenes/Desert/CactusGood.tscn" id="1_xdo6c"]
 [ext_resource type="PackedScene" uid="uid://d41kaiupqtjt" path="res://modelScenes/Desert/Aloe.tscn" id="3_5rte5"]
-[ext_resource type="PackedScene" uid="uid://efqq0bibofjr" path="res://modelScenes/Desert/DeadTree1.tscn" id="4_ygp0c"]
-[ext_resource type="PackedScene" uid="uid://bc50cug608vwv" path="res://modelScenes/Desert/DeadTree2.tscn" id="5_6gaae"]
+[ext_resource type="PackedScene" uid="uid://b7pyx28wswjvu" path="res://modelScenes/Desert/DeadTree.tscn" id="5_hgpwl"]
 [ext_resource type="PackedScene" uid="uid://b746wuqumd3xp" path="res://modelScenes/Winter/Cow.tscn" id="6_hgpwl"]
+[ext_resource type="PackedScene" uid="uid://8dyhk1v6f1o6" path="res://modelScenes/Desert/DeadTreeLarge.tscn" id="6_ibhca"]
+[ext_resource type="PackedScene" uid="uid://dxpqugjb5alwg" path="res://modelScenes/Desert/Tumbleweed.tscn" id="7_ibhca"]
 
 [node name="DesertBlock" type="Node3D"]
 
@@ -92,21 +93,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 2)
 collision_layer = 2
 collision_mask = 2
 
-[node name="DeadTree1" parent="." instance=ExtResource("4_ygp0c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.88203, 1.23371, -8.40469)
-collision_layer = 2
-collision_mask = 2
-
-[node name="DeadTree3" parent="." instance=ExtResource("4_ygp0c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.88203, 1.18479, -12.4047)
-collision_layer = 2
-collision_mask = 2
-
-[node name="DeadTree2" parent="." instance=ExtResource("5_6gaae")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59302, 1.17256, 1.85403)
-collision_layer = 2
-collision_mask = 2
-
 [node name="Cow" parent="." instance=ExtResource("6_hgpwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -2)
+collision_layer = 2
+collision_mask = 2
 mass = 2.0
+
+[node name="DeadTree" parent="." instance=ExtResource("5_hgpwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, -7)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTree2" parent="." instance=ExtResource("5_hgpwl")]
+transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, -8, 1, -12)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTreeLarger" parent="." instance=ExtResource("6_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 2)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTreeLarger3" parent="." instance=ExtResource("6_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 1, 2)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DeadTreeLarger2" parent="." instance=ExtResource("6_ibhca")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -7)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Tumbleweed" parent="." instance=ExtResource("7_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -7)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Tumbleweed2" parent="." instance=ExtResource("7_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, 1)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Tumbleweed3" parent="." instance=ExtResource("7_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
+collision_layer = 2
+collision_mask = 2
+
+[node name="Tumbleweed4" parent="." instance=ExtResource("7_ibhca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -9)
+collision_layer = 2
+collision_mask = 2

@@ -63,7 +63,7 @@ func _physics_process(delta: float) -> void:
 			#playerSize = sum_sizes(find_mesh_descendants(get_parent()))*get_parent().scale
 			#print(playerSize)
 			
-			get_parent().scale += sum_sizes(find_mesh_descendants(body))*body.scale * 0.001
+			get_parent().scale += body.mass*body.scale * 0.001
 			#get_parent().get_child(0).fov += sum_sizes(find_mesh_descendants(body))* body.scale.x * 0.001
 
 			#get_parent().scale.z += sum_sizes(find_mesh_descendants(body))* body.scale.z * 0.001

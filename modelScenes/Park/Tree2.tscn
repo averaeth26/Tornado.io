@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://fs2u18yt27tg"]
+
+[ext_resource type="PackedScene" uid="uid://b8aki06m45ou8" path="res://models/Nature/Tree_4_C_Color1.gltf" id="1_im5ol"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_laeit"]
+height = 4.36652
+
+[node name="Tree2" type="RigidBody3D"]
+mass = 7.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.93228, 0)
+shape = SubResource("CylinderShape3D_laeit")
+
+[node name="Tree_4_C_Color12" parent="." instance=ExtResource("1_im5ol")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[editable path="Tree_4_C_Color12"]

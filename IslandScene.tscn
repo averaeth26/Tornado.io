@@ -50,63 +50,105 @@ transform = Transform3D(0.822164, 0, 0.569251, 0, 1, 0, -0.569251, 0, 0.822164, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.37732, -3.27883, 12.3566)
 
 [node name="VolcanoIsland" parent="." instance=ExtResource("2_chvhg")]
+collision_layer = 3
+collision_mask = 3
 
 [node name="IslandPlant" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.31401, -2.58782, 5.26811)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant3" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76979, -2.77977, 11.166)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant2" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2249, -3.21484, 0.812146)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant4" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.73734, -3.48911, -15.7653)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant10" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.379, -3.35084, -11.7352)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant5" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6491, -2.92585, -13.5311)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant6" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.09901, -3.27631, -13.5311)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant7" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5277, -3.27631, 6.92775)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant8" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23691, -2.69213, 11.4185)
+collision_layer = 2
+collision_mask = 2
 
 [node name="IslandPlant9" parent="." instance=ExtResource("3_pgsyg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.938961, -3.5843, 17.1321)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.0894, -3.36441, 8.90972)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe3" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.91574, -3.36441, 16.065)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe10" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.76315, -3.2806, 13.717)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe2" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1458, -3.14307, -5.05867)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe4" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.47098, -2.85029, -10.7389)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe5" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.48153, -3.08716, -14.0781)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe6" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.52628, -3.62343, -17.6789)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe7" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2032, -3.62343, -9.80892)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe8" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2032, -3.24874, 2.0806)
+collision_layer = 2
+collision_mask = 2
 
 [node name="Aloe9" parent="." instance=ExtResource("4_6dbgo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.91164, -2.56062, 8.38062)
+collision_layer = 2
+collision_mask = 2
