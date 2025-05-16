@@ -7,7 +7,7 @@ points = PackedVector3Array(1.78108, 0.050005, 32.4956, 1.78108, 0.050005, 28.39
 
 [node name="Building2" type="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40708, 0, 0)
-mass = 25.0
+mass = 20.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(3.57628e-07, 7.54979e-08, 1, -7.54979e-08, -1, 7.54979e-08, 1, -7.54979e-08, -3.57628e-07, -30.0243, -7.06036e-05, 0.218523)

@@ -44,11 +44,13 @@ collision_mask = 3
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 0, 2)
 collision_layer = 2
 collision_mask = 2
+mass = 8.0
 
 [node name="BuildingE" parent="." instance=ExtResource("10_wuwkj")]
 transform = Transform3D(-5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, -2, 0, 4)
 collision_layer = 2
 collision_mask = 2
+mass = 8.0
 
 [node name="RoadJunction" parent="." instance=ExtResource("12_x5npo")]
 collision_layer = 3
@@ -66,6 +68,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0, 2)
 collision_layer = 2
 collision_mask = 2
+mass = 6.0
 
 [node name="Base3" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
@@ -76,6 +79,7 @@ collision_mask = 3
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, 2)
 collision_layer = 2
 collision_mask = 2
+mass = 8.0
 
 [node name="Base4" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
@@ -106,6 +110,7 @@ collision_mask = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
 collision_layer = 2
 collision_mask = 2
+mass = 5.0
 
 [node name="Base5" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
@@ -116,6 +121,7 @@ collision_mask = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
 collision_layer = 2
 collision_mask = 2
+mass = 8.0
 
 [node name="Base6" parent="." instance=ExtResource("2_k0pgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)

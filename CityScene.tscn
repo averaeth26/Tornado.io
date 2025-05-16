@@ -1,13 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://0fnyw270bloi"]
+[gd_scene load_steps=11 format=3 uid="uid://0fnyw270bloi"]
 
 [ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
-[ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://CityBlock.tscn" id="2_dhq7r"]
-[ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://ParkBlock.tscn" id="3_dhq7r"]
-[ext_resource type="PackedScene" uid="uid://ctebjnc46ih3t" path="res://DesertBlock.tscn" id="4_usw5p"]
-[ext_resource type="PackedScene" uid="uid://vw0sciyspw38" path="res://MountainScene.tscn" id="5_gtpdy"]
-[ext_resource type="PackedScene" uid="uid://1g33l8277xpe" path="res://IslandScene.tscn" id="6_tpiau"]
+[ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://TerrainScenes/CityBlock.tscn" id="2_dhq7r"]
+[ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://TerrainScenes/ParkBlock.tscn" id="3_dhq7r"]
+[ext_resource type="Script" uid="uid://bflvtmui55ua8" path="res://terrain_scenes.gd" id="5_j80k8"]
 [ext_resource type="Script" uid="uid://chlli88quu1h3" path="res://panel.gd" id="7_qv6mg"]
-[ext_resource type="PackedScene" uid="uid://dt7o8iiskvcv7" path="res://MetroScene.tscn" id="8_kxoq8"]
+[ext_resource type="PackedScene" uid="uid://bmix1hm77cacj" path="res://modelScenes/Water.tscn" id="10_jho3o"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jofcs"]
 
@@ -40,16 +38,17 @@ transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 2.5, 0.0363312, 0, -0.0153446)
 collision_layer = 7
 collision_mask = 7
 
-[node name="CityBlock" parent="." instance=ExtResource("2_dhq7r")]
-
 [node name="CityBlock2" parent="." instance=ExtResource("2_dhq7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
+visible = false
 
 [node name="CityBlock3" parent="." instance=ExtResource("2_dhq7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
+visible = false
 
 [node name="CityBlock4" parent="." instance=ExtResource("2_dhq7r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 0)
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_dhq7r")
@@ -58,20 +57,9 @@ environment = SubResource("Environment_dhq7r")
 transform = Transform3D(0.500003, -0.749999, 0.43301, 0, 0.499998, 0.866026, -0.866024, -0.433016, 0.250001, 0, 0, 0)
 shadow_enabled = true
 
-[node name="DesertBlock" parent="." instance=ExtResource("4_usw5p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 14)
-
-[node name="ParkBlock" parent="." instance=ExtResource("3_dhq7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
-
 [node name="ParkBlock2" parent="." instance=ExtResource("3_dhq7r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28)
-
-[node name="MountainScene" parent="." instance=ExtResource("5_gtpdy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.2218, 0.539836, -13.1889)
-
-[node name="IslandScene" parent="." instance=ExtResource("6_tpiau")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 4, 42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+visible = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -103,7 +91,12 @@ offset_bottom = 23.0
 text = "000"
 horizontal_alignment = 2
 
-[node name="MetroScene" parent="." instance=ExtResource("8_kxoq8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 42)
+[node name="TerrainScenes" type="Node3D" parent="."]
+script = ExtResource("5_j80k8")
+
+[node name="CityBlock" parent="TerrainScenes" instance=ExtResource("2_dhq7r")]
+
+[node name="Water" parent="." instance=ExtResource("10_jho3o")]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0, 0, 3)
 
 [editable path="TornadoCharacterController"]
