@@ -1,5 +1,5 @@
 extends Panel
-var time: float = 60.0
+var time: float = 120.0
 var minutes: int = 0
 var seconds: int = 0
 var msec: int = 0
@@ -12,6 +12,11 @@ func _process(delta: float) -> void:
 	$Minutes.text = "%02d:" % minutes
 	$Seconds.text = "%02d." % seconds
 	$Milliseconds.text = "%03d" % msec
+	if time < 0:
+		stop()
+		#TODO: Add leaderboard and leaderboard scene and link it up here
+		get_tree().change_scene_to_file("res://Leaderboard.tscn")
+
 	
 func stop() -> void:
 	set_process(false)

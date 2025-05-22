@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxg27lyopqvjr"]
+
+[ext_resource type="Script" uid="uid://cxxtdcmgn6j6h" path="res://leaderboardButton.gd" id="1_an2gi"]
+[ext_resource type="PackedScene" uid="uid://dgygkbtm0burn" path="res://addons/quiver_leaderboards/leaderboard_ui.tscn" id="1_n6nvk"]
+
+[node name="Leaderboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_an2gi")
+
+[node name="LeaderboardUI" parent="." instance=ExtResource("1_n6nvk")]
+layout_mode = 1
+leaderboard_id = "tornadoio-tornadoio2-d59Z"
+
+[node name="MenuButton" type="Button" parent="LeaderboardUI"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Menu
+"
+
+[connection signal="pressed" from="LeaderboardUI/MenuButton" to="." method="_on_menu_button_pressed"]

@@ -73,7 +73,7 @@ func _physics_process(delta: float) -> void:
 			#print(new_lift_force, gravity*body.mass)
 
 
-			body.scale -= get_parent().scale * 0.005
+			body.scale -= body.scale * min(0.04, get_parent().scale.x * 0.005)
 			if body.scale.x <= 0.02:
 				body.free()
 				bodies.erase(body)

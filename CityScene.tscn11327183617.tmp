@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://0fnyw270bloi"]
+[gd_scene load_steps=11 format=3 uid="uid://0fnyw270bloi"]
 
 [ext_resource type="PackedScene" uid="uid://b2w0n1j7m0w4k" path="res://TornadoCharacter.tscn" id="1_jofcs"]
-[ext_resource type="Script" uid="uid://be5t0vyh0g1c4" path="res://playerScore.gd" id="1_qv6mg"]
 [ext_resource type="PackedScene" uid="uid://djouu2ebofqfp" path="res://TerrainScenes/CityBlock.tscn" id="2_dhq7r"]
 [ext_resource type="PackedScene" uid="uid://cldhks7dl8yp8" path="res://TerrainScenes/ParkBlock.tscn" id="3_dhq7r"]
 [ext_resource type="Script" uid="uid://bflvtmui55ua8" path="res://terrain_scenes.gd" id="5_j80k8"]
@@ -24,7 +23,6 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="CityScene" type="Node3D"]
-script = ExtResource("1_qv6mg")
 
 [node name="TornadoCharacterController" parent="." instance=ExtResource("1_jofcs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0809402, 1, 0.0341835)
@@ -63,21 +61,21 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
 visible = false
 
-[node name="GUI" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Timer" type="Panel" parent="GUI"]
+[node name="Timer" type="Panel" parent="CanvasLayer"]
 offset_right = 101.0
 offset_bottom = 25.0
 script = ExtResource("7_qv6mg")
 
-[node name="Minutes" type="Label" parent="GUI/Timer"]
+[node name="Minutes" type="Label" parent="CanvasLayer/Timer"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 text = "00"
 horizontal_alignment = 2
 
-[node name="Seconds" type="Label" parent="GUI/Timer"]
+[node name="Seconds" type="Label" parent="CanvasLayer/Timer"]
 layout_mode = 0
 offset_left = 23.0
 offset_right = 63.0
@@ -85,26 +83,13 @@ offset_bottom = 23.0
 text = ":00"
 horizontal_alignment = 2
 
-[node name="Milliseconds" type="Label" parent="GUI/Timer"]
+[node name="Milliseconds" type="Label" parent="CanvasLayer/Timer"]
 layout_mode = 0
 offset_left = 51.0
 offset_right = 91.0
 offset_bottom = 23.0
 text = "000"
 horizontal_alignment = 2
-
-[node name="Score" type="Panel" parent="GUI"]
-offset_left = 1034.0
-offset_right = 1152.0
-offset_bottom = 25.0
-
-[node name="Points" type="Label" parent="GUI/Score"]
-layout_mode = 0
-offset_left = 5.0
-offset_right = 104.0
-offset_bottom = 25.0
-text = "0"
-vertical_alignment = 1
 
 [node name="TerrainScenes" type="Node3D" parent="."]
 script = ExtResource("5_j80k8")
